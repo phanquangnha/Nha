@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioner</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Image Captioner</h1>
+    
+    <form action="/" method="post" enctype="multipart/form-data" id="uploadForm">
+        <label for="file">Upload Image:</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" required>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if captions %}
+        <h2>Predicted Captions:</h2>
+        <ul>
+            {% for caption in captions %}
+                <li>{{ caption }}</li>
+            {% endfor %}
+        </ul>
+        
+        {% if img_path %}
+            <img src="{{ url_for('static', filename=img_path) }}" alt="Uploaded Image">
+        {% endif %}
+    {% endif %}
+
+    <script>
+        $(document).ready(function() {
+            $('#file').change(function() {
+                $('#uploadForm').submit();
+            });
+        });
+    </script>
+</body>
+</html>
