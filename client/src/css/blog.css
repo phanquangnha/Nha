@@ -1,0 +1,89 @@
+.blog {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 95%;
+  /* margin: auto; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+}
+
+.blog .boxItems {
+  width: 100%;
+  transition: 0.5s;
+  background-color: rgb(240, 240, 240);
+}
+
+.blog .boxItems:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.blog img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.3);
+}
+
+.blog .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.blog .tag a {
+
+  font-size: 13px;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.blog .tag {
+  display: flex;
+  align-items: center;
+
+}
+
+.blog h3 {
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+.flex {
+  display: flex;
+}

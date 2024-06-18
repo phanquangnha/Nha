@@ -1,0 +1,52 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: rgb(0, 119, 255);
+}
+.icons {
+  font-size: 22px;
+  padding-right: 5px;
+}
+.icon-social {
+  font-size: 28px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+  height: 50px;
+}
+
+.ql-container {
+  border-radius: 9px;
+}
+.ql-snow {
+}
+.ql-toolbar {
+  border-radius: 9px;
+}
+.ql-editor {
+  min-height: 130px;
+}
